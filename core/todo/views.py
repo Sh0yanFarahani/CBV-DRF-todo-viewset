@@ -6,13 +6,15 @@ from django.urls import reverse_lazy
 from django.views.generic.edit import DeleteView, UpdateView, CreateView
 from django.views.generic import  ListView
 from .models import Todo
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 
-class TaskList(ListView):
+class TaskList(LoginRequiredMixin, ListView):
     model = Todo
 
-class TaskCreate(CreateView):
+
+class TaskCreate(LoginRequiredMixin, CreateView):
     model = Todo
     fields = ['title']
     success_url  = reverse_lazy('task:task-list')
@@ -22,7 +24,8 @@ class TaskCreate(CreateView):
         return super(TaskCreate,self).form_valid(form)
     
     
-class TaskDelete(DeleteView):
+
+class TaskDelete(LoginRequiredMixin, DeleteView):
     model = Todo
     success_url = reverse_lazy('task:task-list')
 
@@ -33,7 +36,8 @@ class TaskDelete(DeleteView):
         return self.model.objects.all()
 
 
-class TaskComplete(UpdateView):
+
+class TaskComplete(LoginRequiredMixin, UpdateView):
     model = Todo    
     fields = [ 
         "done", 
@@ -45,6 +49,8 @@ class TaskComplete(UpdateView):
         object.done = True
         object.save()
         return redirect(self.success_url)
+    
+
 
 class TaskUpdate(UpdateView):
     model = Todo    
