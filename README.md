@@ -4,14 +4,14 @@
 Training to set up this code:
 
 install python in window:
-        Step 1 — Downloading the Python Installer
+Step 1 — Downloading the Python Installer
                1 Go to the official Python download page for Windows.
         
                2 Find a stable Python 3 release. This tutorial was tested with Python version 3.10.10.
         
                3 Click the appropriate link for your system to download the executable file: Windows installer (64-bit) or Windows installer (32-bit).
                
-        Step 2 — Running the Executable Installer
+Step 2 — Running the Executable Installer
                 1 After the installer is downloaded, double-click the .exe file, for example python-3.10.10-amd64.exe, to run the Python installer.
         
                 2 Select the Install launcher for all users checkbox, which enables all users of the computer to access the Python launcher application.
