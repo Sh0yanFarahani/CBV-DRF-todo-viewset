@@ -13,12 +13,12 @@ Step 1 — Downloading the Python Installer
                
 Step 2 — Running the Executable Installer
                 1 After the installer is downloaded, double-click the .exe file, for example python-3.10.10-amd64.exe, to run the Python installer.
-        
+                
                 2 Select the Install launcher for all users checkbox, which enables all users of the computer to access the Python launcher application.
         
                 3 Select the Add python.exe to PATH checkbox, which enables users to launch Python from the command line.
         
-                4 If you’re just getting started with Python and you want to install it with default features as described in the dialog, then click Install Now and go to Step 4 - Verify the Python Installation. To install other optional and advanced features, click Customize installation and continue.
+                4 If you’re just getting started with Python and you want to install it with default features as described in the dialog, then click Install Now and go to Step 4 - Verify the Python Installation. To install other optional and advanced features,                    click Customize installation and continue.
         
                 5 The Optional Features include common tools and resources for Python and you can install all of them, even if you don’t plan to use them. 
         
