@@ -5,6 +5,7 @@ Training to set up this code:
 
 install python in window:
 Step 1 — Downloading the Python Installer
+
                1 Go to the official Python download page for Windows.
         
                2 Find a stable Python 3 release. This tutorial was tested with Python version 3.10.10.
