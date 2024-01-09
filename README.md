@@ -1,4 +1,5 @@
-# DRF_todo
+# CBV_DRF_todo_viewset
+
   Todo App project with framework rest with functionality auth.
   
 Training to set up this code:
