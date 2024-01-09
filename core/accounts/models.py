@@ -18,7 +18,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     # with smtp fake server 
     is_staff = models.BooleanField(default=False)
-    is_verified = models.BooleanField()
+    is_verified = models.BooleanField(default=False)
 
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
