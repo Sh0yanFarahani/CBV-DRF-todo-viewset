@@ -1,10 +1,9 @@
 from typing import Any
-from django.db.models.query import QuerySet
-from django.http import HttpRequest, HttpResponse
-from django.shortcuts import render, redirect
+from django.http import HttpRequest
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views.generic.edit import DeleteView, UpdateView, CreateView
-from django.views.generic import  ListView
+from django.views.generic import  ListView, TemplateView
 from .models import Todo
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -59,3 +58,8 @@ class TaskUpdate(UpdateView):
     ]
     template_name = 'todo/todo_update.html'
     success_url= reverse_lazy('task:task-list')
+
+# api
+    
+class TaskApiView(TemplateView):
+    template_name = "api/index.html"

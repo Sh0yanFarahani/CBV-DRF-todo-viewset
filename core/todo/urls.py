@@ -5,7 +5,8 @@ from . import views
 app_name = 'task'
 
 urlpatterns = [
-    path('', views.TaskList.as_view(), name='task-list'),
+    path('', views.TaskApiView.as_view(), name='task-api'),
+    path('task', views.TaskList.as_view(), name='task-list'),
     path('task/add', views.TaskCreate.as_view(), name='create-task'),
     path('delete/<int:pk>', views.TaskDelete.as_view(), name='delete-task'),
     path('complete/<int:pk>', views.TaskComplete.as_view(), name='complete-task'),

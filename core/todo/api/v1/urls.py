@@ -5,5 +5,5 @@ from .views import TaskViewSet
 app_name = 'api-v1'
 
 router = DefaultRouter()
-router.register('task', TaskViewSet, basename='tasks')
+router.register('task', TaskViewSet, basename='task')
 urlpatterns = router.urls
